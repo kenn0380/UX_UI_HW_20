@@ -795,6 +795,15 @@ textarea:focus {
     }
 }
 
+button:active {
+    outline: none !important;
+    border: none !important;
+}
+
+button {
+    outline: none !important;
+}
+
 /* Footer */
 
 footer {
@@ -816,6 +825,4 @@ footer {
 
 .case-study-video-hero {
     max-width: 100%;
-
-
 }
