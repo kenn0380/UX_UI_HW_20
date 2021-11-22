@@ -612,8 +612,9 @@ button {
     max-width: 1400px;
     align-items: flex-end;
     margin: 0 auto;
-    margin-top: 360px;
+    margin-top: 144px;
     max-width: 1400px;
+    justify-content: flex-start;
 }
 .case-study-video {
     position: relative;
@@ -642,6 +643,8 @@ button {
 
 .cs-tile-right {
     max-height: 400px;
+    max-width: 800px !important;
+    justify-self: center !important;
 }
 
 .cs-tile-right:nth-of-type(even) {
@@ -666,6 +669,10 @@ button {
 
 #case-study1 {
     margin-top: 36px !important;
+}
+
+#case-study3-video {
+    top: 0px !important;
 }
 
 /* Contact */
