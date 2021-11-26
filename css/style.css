@@ -195,21 +195,30 @@ button {
 
 @media screen and (max-width: 425px) {
     h1 {
-        font-size: 30px !important;
+        font-size: 34px !important;
         line-height: 40px !important;
     }
     h2, h3, h4 {
         font-size: 18px !important;
     }
     p {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     .section-header-container {
     margin: 4vh 0;
     }
-    .section-header-container h2 {
-    font-size: 22px !important;
+    .sectionHeader {
+    font-size: 18px !important;
+    line-height: 22px !important;
+    border-bottom: solid red 1px;
     }
+    #case-study3-video {
+    max-width: 300px !important;
+    }
+    .case-study-tile {
+    justify-content: center !important;
+    }
+
 }
 
 
@@ -300,7 +309,7 @@ button {
         max-width: 66px;
     }
     .hero-left {
-        display: none;
+    margin: 0px 12px;
     }
     #hero-container {
         display: block;
@@ -498,105 +507,76 @@ button {
 
 /* My Skills */
 
+#my-skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 #my-skills-section {
     margin: 0 72px;
-    display: flex;
-    flex-direction: column;
 }
 
-.skill-card {
-    padding: 28px;
-    margin: 0 12px;
-    display: inline-block;
+.skill-block {
+    height: 24vw;
+    width: 26vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-size: cover;
-    width: 24vw;
-    height: 20vw;
+    position: relative;
+    z-index: 1;
 }
 
+.skills-video {
+    width: 100%;
+    padding: 16px;
+    z-index: 2;
+}
+
+.skills-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.skills-overlay2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-skills {
+    background-color: rgb(255, 255, 255, .7);
+    padding: 16px;
+    width: 100%;
+}
+
+.skills-overlay2 h3 {
+    
+}
 
 #hcd {
     background-image: url("../Images/hcd_background.jpg");
+    background-size: cover;
 }
 
 #ui {
     background-image: url("../Images/ui-background.jpg");
+    background-size: cover;
 }
 
 #fe {
     background-image: url("../Images/html_css_background.jpg");
+    background-size: cover;
 }
-
-#skill-card-holder {
-    display: inline-block;
-    margin: 0 auto;
-    display: flex;
-}
-
-
-
-.skill-card-top {
-    display: flex;
-    align-items: flex-end;
-}
-
-.skill-card-top img {
-    display: inline-block;
-    object-fit: contain;
-}
-
-.skills-list {
-    /* Changing to display block on hover */
-    display: none;
-    padding: 0px;
-    margin: 0;
-    padding-left: 8px;
-    width: 200px;
-}
-
-.skills-list p {
-    line-height: 1.5em;
-    padding: 8px;
-    background-color: white;
-}
-
-.skill-card-bottom {
-    margin-top: 36px;
-    text-align: center;
-    top: 30px;
-    padding: 8px;
-    background-color: white;
-}
-
-.skill-card-bottom h3 {
-    font-size: 26px;
-}
-
-
-@media only screen and (max-width: 1700px) {
-    .skill-card-bottom h3 {
-        font-size: 20px;
-    }
-    .skills-list-p {
-        font-size: 16px !important;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .skill-card-bottom h3 {
-        font-size: 16px;
-    }
-    .skill-card {
-        padding: 16px;
-    }
-    .skill-card-bottom {
-        padding: 4px;
-    }
-}
-
 
 /* My Work */
 
@@ -639,9 +619,17 @@ button {
 
 .cs-tile-left {
     margin-right: 24px;
+    width: 25vw !important; 
+}
+
+#case-study1 {
+    position: relative;
+    bottom: 50px;
+    margin-top: 0px !important
 }
 
 .cs-tile-right {
+    width: auto !important;
     max-height: 400px;
     max-width: 800px !important;
     justify-self: center !important;
@@ -844,6 +832,7 @@ footer {
     border-bottom: solid red 2px;
 }
 
+
 .cs-hero-text-bottom {
     margin-top: 8px;
 } 
@@ -941,4 +930,193 @@ figcaption {
 
 #double-image div {
     margin-left: 16px;
+}
+
+@media screen and (max-width: 425px) {
+    .case-study-tile {
+        align-items: center !important;
+    }
+    #email-contact {
+        font-size: 16px !important;
+    }
+    #contact-title {
+        margin-top: 64px;
+    }
+    input, textarea {
+        margin-top: 6px !important;
+        font-size: 18px !important;
+    }
+    footer p {
+        font-size: 12px !important;
+    }
+    footer a {
+        font-size: 12px !important;
+    }
+    footer {
+        padding: 8px !important;
+    }
+    #li-footer img {
+        height: 14px !important;
+    }
+    .cs-hero {
+        margin: 0 12px !important;
+    }
+    h1 {
+        font-size: 34px !important;
+        line-height: 30px !important;
+    }
+    h3, h4 {
+        font-size: 18px !important;
+    }
+    h2 {
+        font-size: 22px !important;
+    }
+    p,
+    li {
+        font-size: 16px !important;
+    }
+    .section-header-container {
+    margin: 4vh 0;
+    }
+    .sectionHeader {
+    font-size: 22px !important;
+    line-height: 22px !important;
+    border-bottom: solid red 1px;
+        
+    }
+    .section-header-container h2 {
+        padding-top: 0px !important;
+    }
+    #case-study3-video {
+    max-width: 300px !important;
+    }
+    .case-study-tile {
+    justify-content: center !important;
+    }
+    .cs-hero-text-top {
+        font-size: 34px !important;
+        line-height: 40px !important;
+    }
+    .cs-hero-text-bottom h2 {
+        font-size: 18px !important;
+        line-height: 22px !important;
+    }
+    .cs-tile-left {
+        width: 100% !important;
+        margin-right: 0px;
+    }
+    #my-skills-container {
+        flex-direction: column;
+        margin: 0 12px;
+    }
+    .skill-block {
+        height: 280px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+}
+
+
+/* Confetti */
+
+#emitter {
+    visibility: hidden;
+    background-color: #222;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 40%;
+    left: 0%;
+}
+.dot-container {
+    position:absolute;
+    left:0;
+    top:0;
+    overflow:visible;
+    z-index:5000;
+    pointer-events:none;
+}
+.dot {
+    position: absolute;
+    pointer-events: none; /*performance optimization*/
+}
+
+.section-header-container h2 {
+    padding-top: 100px !important;
+}
+
+@media only screen and (max-width: 425px) {
+    .section-header-container h2 {
+        padding-top: 50px !important;
+    }
+    #case-study1 {
+        margin-top: -30px !important;
+        position: static;
+    }
+    .cs-tile-right:nth-of-type(even) {
+        margin-right: 0px !important;
+    }
+    .cs-hero {
+        flex-direction: column-reverse;
+    }
+    .cs-hero-text-top {
+        display: inline-block;
+    }
+    .cs-content-card {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 12px !important;
+    }
+    .cs-content-card:nth-last-of-type(even){
+        flex-direction: column-reverse;
+    }
+    .figma-embed {
+        width: 90vw;
+        height: 300px;
+    }
+    .prototype-div {
+        margin: 0px 12px !important;
+    }
+    .cs-content-card-text {
+        max-width: 100% !important;
+    }
+    .cs-content-card-img {
+        align-self: center;
+        max-width: 100%;
+    }
+    .case-study-video-hero {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+    #before-after {
+        margin-top: 48px;
+    }
+    #before-after h4 {
+        margin-right: 30vw !important;
+    }
+    #tribi-video {
+        position: relative;
+        left: 10vw;
+    }
+    #tribi-prototype {
+        height: 735px;
+    }
+    .display-4 {
+        margin: 0px 0px !important;
+        padding: 0px 0px !important;
+    }
+    .case-study-button {
+        padding: 8px 0px !important;
+    }
+    .cs-content-card-text p {
+        margin-bottom: 0px;
+        margin-top: 8px
+    }
+}
+
+#tribi-prototype {
+    width: 325px;
+    height: 735px;
 }
